@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(247, 228, 205);
+  margin: 100px 200px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+
+}
+
+div {
+  margin: 5px 5px;
+  width: auto;
+}
+
+p.fieldsError {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}

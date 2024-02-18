@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/scripts.js"></script>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <h1>Calculator</h1>
+  <form>
+    <div>
+      <label for="number1">Number 1</label>
+      <input id="number1" name="number1" type="number">
+      <label for="number2">Number 2</label>
+      <input id="number2" name="number2" type="number">
+      <p id="error" class="fieldsError hidden">Both fields are required!</p>
+      <p id="errorDivideByZero" class="fieldsError hidden">Dividing by zero is not allowed!</p>
+    </div>
+    <div>
+      <input name="operators" id="add" type="radio" value="add" checked>
+      <label for="add">ADD</label>
+      <input name="operators" id="subtract" type="radio" value="subtract">
+      <label for="subtract">SUBTRACT</label>
+      <input name="operators" id="multiply" type="radio" value="multiply">
+      <label for="multiply">MULTIPLY</label>
+      <input name="operators" id="divide" type="radio" value="divide">
+      <label for="divide">DIVIDE</label>
+    </div>
+    <div>
+      <input id="color" type="color">
+      <label for="color">Select the color for result display</label>
+    </div>
+    <div>
+      <button type="submit">Calculate</button>
+    </div>
+  </form>
+  <div id="result" class="hidden">
+    <h2>Result: <span id="answer"></span></h2>
+  </div>
+</body>
+
+</html>
